@@ -1,3 +1,8 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
 html {
 	font-size: 20px;
 	font-family: monospace, sans-serif;
@@ -18,8 +23,12 @@ header {
 }
 
 #content {
+	border-radius: 30px;
+	padding: 50px;
+	background-color: aliceblue;
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 }
 
 #content > h1 {
