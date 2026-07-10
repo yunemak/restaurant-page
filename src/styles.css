@@ -1,3 +1,8 @@
+html {
+	font-size: 20px;
+	font-family: monospace, sans-serif;
+}
+
 body {
 	background-color: rgb(42, 199, 239);
 	display: flex;
