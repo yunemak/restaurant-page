@@ -55,22 +55,13 @@ menuBtn.addEventListener("click", (e) => {
 
 	// Main courses
 	let mainCoursesDiv = document.createElement("div");
-	let mainCoursesH2 = document.createElement("h2");
 	let mainCoursesUl = document.createElement("ul");
-	let grilledChicken = document.createElement("li");
-	let beefBurger = document.createElement("li");
-	let margheritaPizza = document.createElement("li");
 
-	mainCoursesH2.textContent = "Main Courses";
-	grilledChicken.textContent = "Grilled Chicken - $14";
-	beefBurger.textContent = "Beef Burger - $13";
-	margheritaPizza.textContent = "Margherita Pizza - $12";
-
-	mainCoursesDiv.appendChild(mainCoursesH2);
+	mainCoursesDiv.appendChild(createHeader("Main Courses"));
 	mainCoursesDiv.appendChild(mainCoursesUl);
-	mainCoursesUl.appendChild(grilledChicken);
-	mainCoursesUl.appendChild(beefBurger);
-	mainCoursesUl.appendChild(margheritaPizza);
+	mainCoursesUl.appendChild(createListElement("Grilled Chicken - $14"));
+	mainCoursesUl.appendChild(createListElement("Beef Burger - $13"));
+	mainCoursesUl.appendChild(createListElement("Margherita Pizza - $12"));
 
 	// Append every course
 	contentDiv.appendChild(headerH1);
@@ -79,3 +70,16 @@ menuBtn.addEventListener("click", (e) => {
 })
 
 homeBtn.click();
+
+// functions
+function createHeader(text) {
+	let h2 = document.createElement("h2");
+	h2.textContent = text;
+	return h2;
+}
+
+function createListElement(text) {
+	let li = document.createElement("li");
+	li.textContent = text;
+	return li;
+}
