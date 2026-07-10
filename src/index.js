@@ -39,19 +39,12 @@ menuBtn.addEventListener("click", (e) => {
 
 	// Starters
 	let startersDiv = document.createElement("div");
-	let startersH2 = document.createElement("h2");
 	let startersUl = document.createElement("ul");
-	let tomatoSoup = document.createElement("li");
-	let gardenSalad = document.createElement("li");
 
-	startersH2.textContent = "Starters";
-	tomatoSoup.textContent = "Tomato Soup - $5";
-	gardenSalad.textContent = "Garden Salad - $6";
-
-	startersDiv.appendChild(startersH2);
+	startersDiv.appendChild(createHeader("Starters"));
 	startersDiv.appendChild(startersUl);
-	startersUl.appendChild(tomatoSoup);
-	startersUl.appendChild(gardenSalad);
+	startersUl.appendChild(createListElement("Tomato Soup - $5"));
+	startersUl.appendChild(createListElement("Garden Salad - $6"));
 
 	// Main courses
 	let mainCoursesDiv = document.createElement("div");
