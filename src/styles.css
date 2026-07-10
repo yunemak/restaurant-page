@@ -1,3 +1,13 @@
 body {
-	background-color: purple;
+	background-color: rgb(42, 199, 239);
+}
+
+button {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
 }
