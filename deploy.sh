@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git branch gh-pages || true
+git branch gh-pages
 git checkout gh-pages
 git merge main --no-edit
 
