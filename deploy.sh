@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git branch gh-pages
-git checkout gh-pages
+git checkout origin gh-pages
 git merge main --no-edit
 
 npx webpack
