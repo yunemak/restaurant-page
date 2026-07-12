@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve",
+    "build": "npx webpack",
+    "dev": "npx webpack serve",
     "deploy": "./deploy.sh"
   },
   "repository": {
