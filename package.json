@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack serve",
+    "deploy": "./deploy.sh"
   },
   "repository": {
     "type": "git",
@@ -22,10 +24,5 @@
     "webpack": "^5.108.4",
     "webpack-cli": "^7.2.1",
     "webpack-dev-server": "^6.0.0"
-  },
-  "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve",
-    "deploy": "./deploy.sh"
   }
 }
