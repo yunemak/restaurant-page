@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx webpack",
-    "dev": "npx webpack serve",
-    "deploy": "./deploy.sh"
+    "dev": "npx webpack serve"
   },
   "repository": {
     "type": "git",
